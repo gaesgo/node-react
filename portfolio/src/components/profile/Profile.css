@@ -1,0 +1,31 @@
+.profileWrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.displayedUsername {
+    align-self: center;
+    grid-column: 1/10;
+}
+
+.dropdownMenu {
+    display: none;
+    position: relative;
+    background-color: whitesmoke;
+    min-width: 200px;
+    padding: 12px 16px;
+    z-index: 10;
+    grid-column: 1/10;
+    margin-top: 50px;
+}
+
+.profileWrapper:hover .dropdownMenu {
+    display: block;
+    
+}
+
+.dropdownMenu a {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}

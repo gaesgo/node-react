@@ -1,0 +1,34 @@
+.navigationBar {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: white;
+}
+
+.logotype {
+    width: 65px;
+    padding: 25px;
+    border-radius: 100px;
+}
+
+.about {
+    grid-column: 9/10;
+    align-self: center;
+}
+
+.contact {
+    grid-column: 10/10;
+    align-self: center;
+}
+
+.logotype, .about, .contact {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.profile {
+    grid-column: 3/10;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+}

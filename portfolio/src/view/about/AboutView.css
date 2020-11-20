@@ -1,0 +1,35 @@
+.aboutMe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 32px;
+    background-color: rgb(228, 209, 182);
+}
+
+.textAbout {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    align-self: center;
+    white-space: pre-line;
+}
+
+.cvImage {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
+    width: 400px;
+    border-radius: 500px;
+}
+
+.textDoneSoFar {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+    .textAbout, .cvImage {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
