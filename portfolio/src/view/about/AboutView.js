@@ -1,5 +1,4 @@
 import React from 'react'
-import cvImage from '../../utils/images/cv-picture.png'
 import '../about/AboutView.css'
 
 export const AboutView = () => {
@@ -14,16 +13,7 @@ export const AboutView = () => {
             And so here we are.
             Long story short, Im a music-nerd, love cooking food and
             try different type of beverages. Travel to exciting places
-            is high up on my list of things i like to do.
-            
-            When it comes to coding or CMS-systems i really enjoy React.js,
-            Flutter and Wordpress.`}</h2>
-            <img
-            className="cvImage"
-            src={cvImage}
-            alt="Error...">
-            </img>
-            <h3 className="textDoneSoFar">So lets see what i've done so far</h3>
+            is high up on my list of things i like to do.`}</h2>
     </div>
     )
 }

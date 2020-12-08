@@ -23,6 +23,8 @@
       "plugin:react/recommended"
     ]
   },
+  "proxy": "https://localhost:3090",
+
   "browserslist": {
     "production": [
       ">0.2%",
