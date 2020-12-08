@@ -5,7 +5,7 @@ dotenv.config()
 
 const connectToDatabase = async () => {
 	try {
-		const DB_URL = 'mongodb://localhost/gaesgo'
+		const DB_URL = process.env.DATABASE_URL
 		await mongoose.connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 		console.log('SUCESSFULLY CONNECTED TO THE DATABASE!')
 	} catch (error) {
