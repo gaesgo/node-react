@@ -1,12 +1,13 @@
 {
-  "name": "try-to-get-that-portfolio",
+  "name": "portoflio-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node server.bundle.js",
-    "build": "webpack",
+    "build": "cd ../portfolio && npm run build",
+    "install-frontend": "cd ../portfolio && npm install",
     "dev": "nodemon ./server.js localhost 3090",
     "test": "mocha 'tests/**'"
   },
